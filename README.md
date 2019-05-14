@@ -26,5 +26,5 @@ event = {
 }
 
 client = HeventsClient('http://hevents.hostinger.io', '938E5BF6213D34BD4C2EDF3C81E3E7BD80F52178F3B467643FE3D0F1E7377773');
-response = client->emit(event);
+response = client.emit(event)
 ```
