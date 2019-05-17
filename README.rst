@@ -18,7 +18,7 @@ String ``event`` - the name of the event - is required. Array
 
 .. code:: python
 
-   from hostinger.hevents import HeventsClient
+   from hostinger_hevents import HeventsClient
 
    event = {
        'event': 'USER_SIGN_UP',
