@@ -11,15 +11,20 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [
+install_requirements = [
     'requests',
-    'unittest-xml-reporting',
-    'simplejson'
+    'unittest-xml-reporting'
 ]
 
-setup_requirements = [ ]
+setup_requirements = [
+    'wheel'
+]
 
-test_requirements = [ ]
+test_requirements = [
+    'tox',
+    'coverage',
+    'sphinx'
+]
 
 setup(
     author="Edgaras Lukosevicius",
@@ -36,7 +41,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     description="Hostinger Hevents Client Python implementation",
-    install_requires=requirements,
+    install_requires=install_requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
